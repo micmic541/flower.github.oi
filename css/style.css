@@ -11,6 +11,10 @@ html {
 	font-size: 100%; 
 }
 
+.full-wrapper {
+	overflow-y: hidden !important; 
+}
+
 body {
 	font-family: "Noto Sans JP", sans-serif; 
 	background-repeat: no-repeat; 
@@ -243,57 +247,282 @@ space {
 }
 
 /*FLOWER-----------------------*/
-/*文章が右上にずれない*/
-/*--
-
 .flower {
-	padding: 6vmin; 
-	background-color: #ead5dc; 
+	background-color: #EAD5DC; 
+	font-weight: 400; 
+	color: #3f434a; 
 }
-
-.flower .container {
-	position: relative; 
-	max-height: 730px; 
-	display: flex; 
-	flex-wrap: wrap; 
-	flex-flow: column; 
-	flex-grow: 1; 
-	flex-basis: 650px; 
-}
-
-.flower .title {
-    padding-left: 66%; 
-	max-height: fit-content; 
-	margin-bottom: 24px; 
-	left: 100px; 
-}
-
-
-.flower .tilte, .flower .img, .flower .body { flex-grow: 1; } 
-
-.flower .img {
-	background-image: url(../images/bg2.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 730px;
+.flower-title { 
+	display: inline-block; 
 	width: 50%; 
-	object-fit: contain; 
+	padding-bottom: 8%; }
+
+.flower h2, 
+.flower h3,
+.vase h2 {
+	font-size: 26px; 
+	text-align: center; 
+	font-weight: 400;
+	line-height: 42px; 
 }
 
-.flower .body {
-	max-width: 400px; 
-	margin: 0 120px 120px; 
-	height: 460px; 
+.flower h2,
+.vase h2
+ { font-size: 28px ; }
+.flower h3 { 
+	font-size: 20px;
+	padding-bottom: 4%; 
+	}
+
+.flower p, 
+.vase p
+ {  
+	font-weight: 450; 
+	font-size: 18px; 
+	line-height: 24px; 
+	} 
+
+.flower-container {
+	padding: 10% 0; 
+	
 }
+
+.flower-img {
+	float: left; 
+	width: 50%; 
+	text-align: center; 
+	
+}
+
+.flower-img img
+{ 
+	margin: 0 auto; 
+	text-align: center; 
+	object-fit: contain; 
+	width: 100%; 
+}
+
+.flower-item {
+	display: inline-block; 
+	width: 50%; 
+	
+}
+
+.flower1, 
+.flower2, 
+.flower3 { 
+	padding: 0 20% 5% 20%; 
+}
+/*vase----------------------------------------*/
+.vase {
+	padding: 6% 10% 15% 10%; 
+	background-color: #E7E3DF; 
+	font-weight: 400; 
+	color: #3f434a; 
+	max-height: 810px !important; 
+}
+
+.vase1 p { 
+	line-height: 24px; 
+	font-size: 15px; 
+	font-weight: 400 !important; 
+	}
+
+.vase-container {
+	background-color: #E7E3DF; 
+	padding: 5% 0 15% 0; 
+	max-height: 700px; 
+}
+
+.vase-img {
+	margin-bottom: 20%; 
+	position: relative; 
+	float: right; 
+	width: 50%; 
+	min-width: 60%; 
+	max-width: 100%; 
+}
+
+.vase-img img {
+	position: absolute; 
+	left: 20%; 
+	vertical-align: bottom !important; 
+	display: block; 
+	margin: 0 auto; 
+	object-fit: cover; 
+	width: 100%; 
+	max-height: 700px; 
+}
+
+
+/*白いの何？！*/
+.vase-title {
+	text-align: center; 
+	display: inline-block; 
+	width: 50%; 
+	padding-bottom: 4%;
+}
+
+.vase-title h2 {
+	white-space: nowrap; 
+	padding-bottom: 5%; }
+
+.vase-title h5 {
+	padding-top: 10%; 
+	font-weight: bold; 
+	font-size: 14px; 
+	line-height: 22px; 
+	background-color: #fff; 
+	text-align: justify; 
+	margin: 0 auto; 
+	padding: 4px 8px; 
+	white-space: nowrap; 
+	display: inline-block; 
+}
+
+.vase-item {
+	display: inline-block;  
+	width: 50%; 
+}
+
+.vase1 {
+	padding: 0 15% 10% 15%; 
+	text-align: justify; }
+
+
+.vase2
+ { display: flex;
+	justify-content: space-around; 
+	text-align: center; 
+ }
  
---*/
+ .vase2 p {
+	 font-size: 15px; 
+	 font-weight: 400; 
+ }
+ 
+ .vase2 .bell,
+ .vase2 .moon,
+ .vase2 .candle {
+	 position: relative; 
+ }
+ 
+ .vase2 .bell p,
+ .vase2 .moon p,
+ .vase2 .candle p {
+	 position: absolute; 
+	 top: 78%; 
+ }
+ 
+ .vase2 .bell p { left: 43%; }
+ .vase2 .moon p { left: 40%; }
+ .vase2 .candle p { left: 39%; }
+
+.vase2 img {
+	object-fit: cover; 
+	padding: 2%; 
+	width: 75%; 
+}
+
+.vase3 {
+display: flex; }
+
+.vase3 .vase-box1 {
+	flex-wrap: nowrap; 
+	padding: 3%; }
+
+.vase3 .vase-box1 p {
+	white-space: nowrap;
+	flex-wrap: nowrap;
+	padding: 10px; 
+	font-weight: 700; 
+	font-size: 14px; 
+	line-height: 22px; 
+	outline: 2px solid #3F434A;
+}
+
+.vase3 .vase-box2 {
+	padding: 3%; 
+}
+
+.vase3 .vase-box2 p {
+	font-weight: 400; 
+	font-size: 18px; 
+	line-height: 29px; 
+}
+
+.vase-item small {
+	font-weight: 400; 
+	font-size: 13px; 
+	line-height: 21px; 
+	white-space: nowrap; 
+}
+
+
+	
+
+/*アプリケーション------------------------------------*/
+
+.application { 
+	padding: 4% 10% 8% 12%; }
+	
+
+.application h2 {
+	margin: 0 auto; 
+	padding: 5%; 
+	text-align: center; 
+	color: #3f434a; 
+	font-size: 22px; 
+	font-weight: 400; 
+	line-height: 35px; 
+	text-style: normal; 
+}
+	
+.app-container {
+	display: flex;  
+	justify-content: space-around; 
+}
+
+.app-container img {
+	object-fit: cover; 
+	width: 40%; 
+}
+
+.app-line {
+	white-space: nowrap;  
+	text-align: center; 
+	font-size: 15px; 
+	line-height: 24px; 
+	font-weight: 400; 
+	font-style: normal; 
+	color: #3f434a; 
+}
+
+.app-line h3 {
+	text-style: normal; 
+	padding-bottom: 5%; 
+	font-weight: 400; 
+	text-align: center; 
+	font-size: 20px; 
+	line-height: 32px; 
+}
+
+.app-item1, 
+.app-item2, 
+.app-item3 {
+	padding: 0 2%; 
+	margin: 0 auto; 
+	text-align: center; 
+}
+	
+
 
 /*PHONE-Container----------------------------------*/
-
+/*absolute効いて文字左によせたいのに無理*/
 .phone-container {
+	padding-top: 5%; 
+	padding-left: 24%;
 	display: flex; 
-
 	background-color: #EFDFC5; 
 }
 
@@ -301,18 +530,36 @@ space {
 	background-repeat: no-repeat; 
 	background-position: center bottom; 
 	background-size: contain; 
-	object-fit: contain; 
-	text-align: center; 
+	object-fit: contain;  
 	display: block; 
 	width: 50%; 
 }
 
+.phone-item { 
+		text-align: center; 
+		margin: 5% auto 0 auto; 
+		}
+
+.phone-item p {
+		padding-top: 5%; 
+		font-size: 16px; 
+		line-height: 26px;  
+		text-align: center; 
+		margin: 0 auto; 
+}
+
+.logo {
+	margin: 0 auto; 
+	text-align: center; 
+	width: 60%; 
+}
+
+
 /*FOOTER---------------------------------------------*/
 .footer {
 	padding-top: 10%; 
-	
 	position: relative; 
-	height: 410px; 
+	height: 350px; 
 	width: 100%; 
 	font-style: normal; 
 	font-size: 14px; 
@@ -329,7 +576,6 @@ space {
 
 .navbar {
 	position: absolute; 
-	
 	left: 6%; 
 	text-align: center; 
 	width: 90%; 
@@ -344,7 +590,7 @@ space {
 
 .list-item li {
 	flex-grow: 1; 
-		padding: 0; 
+	padding: 0; 
 	}
 
 
@@ -361,7 +607,7 @@ space {
 
 .footer p { 
 	position: absolute;
-    top: 67%;
+    top: 81%;
     left: 40%;
 	font-size: 13px; 
 	line-height: 21px; 
@@ -372,6 +618,17 @@ space {
 
 
 
+/*animation-------------------------------------*/
+@keyframes fadeup {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 
 
@@ -382,7 +639,7 @@ space {
 @media(max-width: 785px) {
 	
 	body {
-	overflow-x: hidden; }
+	overflow-x: hidden !important; }
 	
 	/*header---------------------*/
 	header .bg-img {
@@ -495,14 +752,172 @@ space {
 	}
 	
 	/*FLOWER-----------------------*/
-	.flower .img {
-	background-image: url(../images/bg2.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 730px;
-	width: 50%; 
+	
+	.flower-title, .vase-title { order: 1; }
+	.flower-img , .vase-img { order: 2; }
+	.flower-item, .vase-item { order: 3; }
+	
+	.flower-img {
+		padding: 0;
+	}
+	
+	
+	
+	.flower {
+	background-color: #EAD5DC; 
+	font-weight: 400; 
+	color: #3f434a; 
+	}
+	
+.flowe-title { padding-bottom: 8%; }
+
+.flower h2, 
+.flower h3 {
+	text-align: center; 
+	font-weight: 400;
+	line-height: 32px; 
+}
+
+.flower h2, 
+.vase h2 { font-size: 22px ; }
+.flower h3 { 
+	font-size: 20px;
+	padding-bottom: 4%; 
+	}
+
+.flower p { 
+	font-size: 15px; 
+	line-height: 24px; 
+	} 
+
+.flower-container
+ {
+	padding: 10% 0; 
+	display: flex; 
+	flex-wrap: wrap; 
+}
+
+.flower-img, 
+.flower-title, 
+.flower-item,
+.vase-title,
+.vase-img, 
+.vase-item 
+	{ flex-grow: 1; }
+
+.flower-img {
+	text-align: center; 
+	margin: 0 auto; 
+	padding: 3% 0;
+	width: 100%; 
+}
+
+.flower-img img { 
+	margin: 0 auto; 
+	text-align: center; 
 	object-fit: contain; 
+	width: 60%; 
+}
+
+.flower-item {
+	padding: 2%; 
+	margin: 0 auto; 
+}
+
+.flower1, 
+.flower2, 
+.flower3 {
+	padding: 0 20% 5% 20%; 
+}
+
+/*VASE---------------------------------------*/
+
+.vase-container {
+	padding: 5% 0;
+	display: flex; 
+	flex-wrap: wrap; 
+	flex-direction: column; 
+}
+
+.vase-title { flex-grow: 1; order: 1; }
+.vase-img { flex-grow: 1; order: 2; }
+.vase-item { flex-grow: 1; order: 3; }
+
+.vase1 {
+	padding: 0; 
+	padding-bottom: 5%; 
+	text-align: justify; }
+	
+.vase2 img {
+	width: 80%; 
+	background-size: contain; 
+}
+
+ .vase2 p {
+	 font-size: 13px; 
+	 font-weight: 400; 
+ }
+
+ .vase2 .bell p,
+ .vase2 .moon p,
+ .vase2 .candle p {
+	 top: 67%; 
+ }
+ 
+ .vase2 .bell p { left: 37%; }
+ .vase2 .moon p { left: 32%; }
+ .vase2 .candle p { left: 30%; }
+ 
+
+.vase3 .vase-box1 p {
+	padding: 5px; 
+	
+}
+
+	
+	/*アプリケーション------------------------------------*/
+	
+	.application {
+		padding: 15% 10%;
+	}
+	
+	.app-container {
+		display: flex;
+		flex-wrap: wrap; 
+		justify-content: space-around; 
+	}
+	
+	.app-container img {
+		object-fit: cover; 
+		width: 35%; 
+	}
+	
+	/*Flower headerのpをcenterに*/
+	/*Flower Vase containers should be 710px height x(----*/
+	/*Calender の花の画像にあるｈ３？文字止まらせる*/
+	/*Vaseをcolumnにする*/
+	/*Vaseのtitleのbump直す*/
+	/*Phone section の文字を full ver でcenterにする*/
+	
+	
+	
+	
+	/*phone-container---------------------------*/
+	
+	.phone-container {
+		padding-top: 0; 
+		padding-left: 0; 
+		display: flex; 
+		flex-wrap: wrap-reverse;
+	}
+	
+	.flower .img {
+		background-image: url(../images/bg2.jpg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 730px;
+		width: 50%; 
 	}
 	
 	.phone-img img {
@@ -512,7 +927,28 @@ space {
 		object-fit: contain; 
 		text-align: center; 
 		display: block; 
-		width: 100%; 
+		width: 75%; 
+		object-fit: contain;
+		margin: 0 auto; 
+	}
+	
+	.phone-item { 
+		padding-top: 10%; 
+		text-align: center; 
+		margin: 5% auto 0 auto; }
+	
+	.phone-item p {
+		padding-top: 5%; 
+		font-size: 16px; 
+		line-height: 26px; 
+		white-space: nowrap; 
+		text-align: center; 
+	}
+	
+	.logo {
+		width: 55%; 
+		text-align: center; 
+		margin: 0 auto; 
 	}
 	
 	/*footer-------------------------*/
@@ -546,14 +982,4 @@ space {
 	
 }
 
-/*animation-------------------------------------*/
-@keyframes fadeup {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-}
 
